@@ -9,13 +9,13 @@ By the end of this practical you will be able to:
 - Use scripts to manipulate UI Elements on a HUD, in response to events in the scene
 - Create interactive menus that manipulate the parameters of Game Objects
 
-To get started, open up your adventure game with sound from last week. If you've used your third person character in your game with sound, you might want to switch back to using an first person controller for today.
+To get started, open up your adventure game with sound from last week. If you've used your third person character in your game with sound, you might want to switch back to using a first person controller for today.
 
 ## Task 1: A Better Crosshair
-The point at which the player’s gun is pointing is currently displayed using a small sphere, which floats in space in the player’s field of view. This doesn’t look particularly good. In this task, you should replace this red dot with a HUD that shows a cross hair icon, which you have downloaded from the Internet. Here are some tips for completing this task:
+The point at which the player’s gun is pointing is currently displayed using a small sphere, which floats in space in the player’s field of view. This does not look particularly good. In this task, you should replace this red dot with a HUD that shows a cross-hair icon, which you have downloaded from the Internet. Here are some tips for completing this task:
 
 - Download a crosshair image with a transparent background
-- Unity imports image assets as textures, while the UI system shows images as sprites. You will, therefore, need to change the “Texture Type” of the image you’ve imported to “Sprite (2D and UI) before it can be added to the canvas.
+- Unity imports image assets as textures, while the UI system shows images as sprites. You will, therefore, need to change the “Texture Type” of the image you’ve imported to "Sprite (2D and UI)" before it can be added to the canvas.
 - When you have correctly added your new crosshair, remove the red dot by deleting the RedDotCrosshair GameObject from the hierarchy
 
 To help the player understand that they need to find some ammo at the start of the level, you may wish to ‘grey out’ the crosshair when the gun is empty. This can be done by manipulating the alpha value of the UI Image’s colour parameter from a script.
@@ -29,9 +29,9 @@ Recall that finding ammunition for the player’s gun is an important part of co
 ## Task 3: Helpful Hints
 To help the player complete the scene, you should show the following text hints on the HUD:
 
-- If the player hasn’t found the ammo after 30 seconds, display the hint “I wonder if there’s any ammo in that shack?”
-- If the player has collected the ammo, but hasn’t walked up the path after 30 seconds, display the hint “I wonder what’s up that path?”
-- If the player has reached the bridge, but hasn’t hit the target to open it after 30 seconds, display the hint “I wonder what would happen if I shot that target on the bridge?”
+- If the player has not found the ammo after 30 seconds, display the hint “I wonder if there’s any ammo in that shack?”
+- If the player has collected the ammo, but has not walked up the path after 30 seconds, display the hint “I wonder what’s up that path?”
+- If the player has reached the bridge, but has not hit the target to open it after 30 seconds, display the hint “I wonder what would happen if I shot that target on the bridge?”
 
 ## Task 4: An Interactive Menu
 To complete today’s practical, you should create an interactive menu for the scene. This menu should be shown over the top of the scene when the game loads. The menu should have the following functionality:
